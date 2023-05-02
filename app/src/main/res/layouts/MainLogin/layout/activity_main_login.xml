@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLogin.MainLogin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ml_textinput"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:background="@drawable/object_round_corners"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center|fill_vertical"
+
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ml_textinput1"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:background="@drawable/object_round_corners"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center|center_horizontal|fill_vertical"
+            android:hint="Password"
+            android:password="true"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.234"
+            tools:ignore="MissingConstraints,DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/ml_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/pass_show_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.867"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.235" />
+
+        <Button
+            android:id="@+id/ml_button1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pass_hide_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.867"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.244" />
+
+        <Button
+            android:id="@+id/ml_button2"
+            android:layout_width="266dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#1877F2"
+            android:fontFamily="@font/ubuntu"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.404" />
+
+        <Button
+            android:id="@+id/ml_button3"
+            android:layout_width="266dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/ubuntu"
+            android:text="CREATE NEW ACCOUNT"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.532" />
+
+        <Button
+            android:id="@+id/ml_button4"
+            style="@style/Theme.AppCompat.Dialog"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:stateListAnimator="@null"
+            android:text="Forgot your password?"
+            android:textColor="#5671FF"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.688" />
+
+        <Button
+            android:id="@+id/ml_button5"
+            style="@style/Theme.AppCompat.Dialog"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:stateListAnimator="@null"
+            android:text="@string/back_to_home_page"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.795" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ml_logo"
+        android:layout_width="411dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073"
+        app:srcCompat="@drawable/app_logo2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/ml_text"
+        android:layout_width="110dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FCA6A5"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+</androidx.constraintlayout.widget.ConstraintLayout>

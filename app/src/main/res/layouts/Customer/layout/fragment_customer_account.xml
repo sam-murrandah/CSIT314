@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerFunction.CustomerAccount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="830dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ca_logo"
+            android:layout_width="96dp"
+            android:layout_height="58dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.021"
+            app:srcCompat="@drawable/app_logo1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/ca_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="ACCOUNT"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/ca_logo1"
+            android:layout_width="422dp"
+            android:layout_height="10dp"
+            android:src="@drawable/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="727dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.941"
+            tools:layout_editor_absoluteX="-6dp">
+
+            <ImageButton
+                android:id="@+id/ca_imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/customer_account_button1"
+                android:background="@null"/>
+
+            <ImageButton
+                android:id="@+id/ca_imageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/customer_account_button6"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/ca_imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/customer_account_button2"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/ca_imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/customer_account_button3"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/ca_imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/customer_account_button4"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/ca_imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/customer_account_button5"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/ca_imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/customer_account_button7"
+                android:background="@null"/>
+
+            <TextView
+                android:id="@+id/ca_textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="         About Us"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
