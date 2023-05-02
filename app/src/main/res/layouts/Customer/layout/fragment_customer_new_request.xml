@@ -135,14 +135,14 @@
 
                     <Button
                         android:id="@+id/cnw_logo3"
-                        android:layout_width="34dp"
-                        android:layout_height="29dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/vector_map_logo"
                         app:cornerRadius="30dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.095"
+                        app:layout_constraintHorizontal_bias="0.094"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/cnw_textinput"
                         app:layout_constraintVertical_bias="1.0"
@@ -171,24 +171,11 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/reclayout">
 
-                    <ImageView
-                        android:id="@+id/new_post_logo"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:src="@drawable/reclayout"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.36"
-                        tools:ignore="MissingConstraints" />
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/cnw_textinput1"
@@ -234,7 +221,7 @@
                         android:id="@+id/cnw_textview2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="20dp"
                         android:text="Type of request:"
                         android:textColor="#000000"
@@ -251,7 +238,7 @@
                         android:id="@+id/cnw_spinner"
                         android:layout_width="180dp"
                         android:layout_height="25dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -281,7 +268,7 @@
                         app:cornerRadius="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.2"
+                        app:layout_constraintHorizontal_bias="0.134"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
@@ -294,17 +281,114 @@
                         android:layout_marginBottom="20dp"
                         android:backgroundTint="@color/blue"
                         android:fontFamily="@font/ubuntu_bold"
-                        android:text="Add more"
+                        android:text="Add more request"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="16dp"
                         app:cornerRadius="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.833"
+                        app:layout_constraintHorizontal_bias="0.881"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cnw_textview3"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ubuntu_italic"
+                        android:gravity="right|center_horizontal|left|center_vertical"
+                        android:singleLine="true"
+                        android:background="@drawable/reclayout1"
+                        android:text="Time Start:*"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.1" />
+
+                    <TextView
+                        android:id="@+id/cnw_textview34"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/ubuntu_italic"
+                        android:gravity="right|center_horizontal|left|center_vertical"
+                        android:singleLine="true"
+                        android:text="Time End:*"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:background="@drawable/reclayout1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cnw_textview3"
+                        app:layout_constraintVertical_bias="0.144" />
+
+                    <Button
+                        android:id="@+id/cnw_button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/ubuntu"
+                        android:text="Pick Time"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        app:cornerRadius="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.906"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cnw_button5"
+                        app:layout_constraintVertical_bias="0.15" />
+
+                    <Button
+                        android:id="@+id/cnw_button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/ubuntu"
+                        android:text="Pick Time"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        app:cornerRadius="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.906"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.125" />
+
+                    <TextView
+                        android:id="@+id/cnw_textview35"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/ubuntu_italic"
+                        android:gravity="right|center_horizontal|left|center_vertical"
+                        android:singleLine="true"
+                        android:text="*: Required Field"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.176"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cnw_textview34"
+                        app:layout_constraintVertical_bias="0.333" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
         </ScrollView>
