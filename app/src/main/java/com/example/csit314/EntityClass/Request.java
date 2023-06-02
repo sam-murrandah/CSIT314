@@ -7,12 +7,11 @@ public class Request {
     private String id;
     private String customerId;
     private String professionalId;
-    private List<String> serviceIds;
-    private List<String> hashTag;
-    private double totalPrice;
+    private String description;
+    private int hashTag;
+    private double salary;
+    private int estimatedHours;
     private int status; //0 is free, 1 is ongoing, 2 is finished, 3 is cancel
-    private Date startDate;
-    private Date endDate; //If no one takes the job after end Date, the job will change to status 3 is cancel
     private String location;
     private String title;
     private List<String> titleToArray;
@@ -23,6 +22,14 @@ public class Request {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public int getEstimatedHours() {
+        return estimatedHours;
+    }
+
+    public void setEstimatedHours(int estimatedHours) {
+        this.estimatedHours = estimatedHours;
     }
 
     public String getCustomerId() {
@@ -41,28 +48,28 @@ public class Request {
         this.professionalId = professionalId;
     }
 
-    public List<String> getServiceIds() {
-        return serviceIds;
+    public String getDescription() {
+        return description;
     }
 
-    public void setServiceIds(List<String> serviceIds) {
-        this.serviceIds = serviceIds;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public List<String> getHashTag() {
+    public int getHashTag() {
         return hashTag;
     }
 
-    public void setHashTag(List<String> hashTag) {
+    public void setHashTag(int hashTag) {
         this.hashTag = hashTag;
     }
 
-    public double getTotalPrice() {
-        return totalPrice;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public int getStatus() {
@@ -73,21 +80,6 @@ public class Request {
         this.status = status;
     }
 
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public Date getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
 
     public String getLocation() {
         return location;

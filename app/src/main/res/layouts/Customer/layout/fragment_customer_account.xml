@@ -70,17 +70,12 @@
                 android:background="@null"/>
 
             <ImageButton
-                android:id="@+id/ca_imageButton1"
+                android:id="@+id/ca_imageButton5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/customer_account_button6"
-                android:background="@null"/>
-            <ImageButton
-                android:id="@+id/ca_imageButton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/customer_account_button2"
-                android:background="@null"/>
+                android:background="@null"
+                android:src="@drawable/customer_account_button2" />
+
             <ImageButton
                 android:id="@+id/ca_imageButton3"
                 android:layout_width="match_parent"
@@ -93,12 +88,14 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/customer_account_button4"
                 android:background="@null"/>
+
             <ImageButton
-                android:id="@+id/ca_imageButton5"
+                android:id="@+id/ca_imageButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/customer_account_button5"
-                android:background="@null"/>
+                android:background="@null"
+                android:src="@drawable/customer_account_button8" />
+
             <ImageButton
                 android:id="@+id/ca_imageButton6"
                 android:layout_width="match_parent"
@@ -106,14 +103,6 @@
                 android:src="@drawable/customer_account_button7"
                 android:background="@null"/>
 
-            <TextView
-                android:id="@+id/ca_textview1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ubuntu_bold"
-                android:text="         About Us"
-                android:textColor="#000000"
-                android:textSize="25dp" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

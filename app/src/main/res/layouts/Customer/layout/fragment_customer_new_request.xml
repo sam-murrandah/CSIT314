@@ -7,6 +7,7 @@
     tools:context=".CustomerFunction.CustomerNewRequest">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customer_new_request_fragment"
         android:layout_width="match_parent"
         android:layout_height="830dp"
         tools:ignore="MissingConstraints">
@@ -96,7 +97,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <EditText
                         android:id="@+id/cnw_textinput"
                         android:layout_width="340dp"
                         android:layout_height="50dp"
@@ -113,15 +114,17 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.106" />
 
-                    <TextView
-                        android:id="@+id/cnw_textview1"
+                    <EditText
+                        android:id="@+id/cnw_textinput4"
                         android:layout_width="210dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="20dp"
                         android:background="@null"
                         android:fontFamily="@font/ubuntu"
                         android:maxLines="2"
-                        android:text="Location"
+                        android:hint="Location*"
+                        android:textColorHint="@color/black"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="normal"
@@ -148,26 +151,6 @@
                         app:layout_constraintVertical_bias="1.0"
                         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
-                    <Button
-                        android:id="@+id/cnw_button1"
-                        android:layout_width="71dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:backgroundTint="@color/gray"
-                        android:fontFamily="@font/ubuntu_bold"
-                        android:text="Pick"
-                        android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="16dp"
-                        app:cornerRadius="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.897"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cnw_textinput"
-                        app:layout_constraintVertical_bias="1.0" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -177,7 +160,7 @@
                     android:background="@drawable/reclayout">
 
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <EditText
                         android:id="@+id/cnw_textinput1"
                         android:layout_width="340dp"
                         android:layout_height="wrap_content"
@@ -197,8 +180,28 @@
                         app:layout_constraintTop_toBottomOf="@+id/cnw_textview2"
                         app:layout_constraintVertical_bias="0.262" />
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <EditText
                         android:id="@+id/cnw_textinput2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:ems="10"
+                        android:fontFamily="@font/ubuntu_light_italic"
+                        android:gravity="left"
+                        android:hint="Salary*"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/black"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.124"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cnw_textinput1"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <EditText
+                        android:id="@+id/cnw_textinput3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -206,16 +209,16 @@
                         android:ems="10"
                         android:fontFamily="@font/ubuntu_light_italic"
                         android:gravity="left"
-                        android:hint="Salary"
+                        android:hint="Estimated hours*"
                         android:inputType="textPersonName"
                         android:textColorHint="@color/black"
                         android:textSize="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.154"
+                        app:layout_constraintHorizontal_bias="0.873"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/cnw_textinput1"
-                        app:layout_constraintVertical_bias="0.044" />
+                        app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
                         android:id="@+id/cnw_textview2"
@@ -249,133 +252,18 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <Button
-                        android:id="@+id/cnw_button2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:backgroundTint="@color/white"
-                        android:fontFamily="@font/ubuntu_bold"
-                        android:text="Remove "
-                        android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="16dp"
-                        app:cornerRadius="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.134"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                    <Button
-                        android:id="@+id/cnw_button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:backgroundTint="@color/blue"
-                        android:fontFamily="@font/ubuntu_bold"
-                        android:text="Add more request"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="16dp"
-                        app:cornerRadius="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.881"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="10dp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/cnw_textview3"
-                        android:layout_width="220dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/ubuntu_italic"
-                        android:gravity="right|center_horizontal|left|center_vertical"
-                        android:singleLine="true"
-                        android:background="@drawable/reclayout1"
-                        android:text="Time Start:*"
-                        android:textColor="@color/black"
-                        android:textSize="15dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.24"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.1" />
-
-                    <TextView
-                        android:id="@+id/cnw_textview34"
-                        android:layout_width="220dp"
-                        android:layout_height="40dp"
-                        android:fontFamily="@font/ubuntu_italic"
-                        android:gravity="right|center_horizontal|left|center_vertical"
-                        android:singleLine="true"
-                        android:text="Time End:*"
-                        android:textColor="@color/black"
-                        android:textSize="15dp"
-                        android:background="@drawable/reclayout1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.24"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cnw_textview3"
-                        app:layout_constraintVertical_bias="0.144" />
-
-                    <Button
-                        android:id="@+id/cnw_button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:backgroundTint="@color/white"
-                        android:fontFamily="@font/ubuntu"
-                        android:text="Pick Time"
-                        android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="15dp"
-                        app:cornerRadius="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.906"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cnw_button5"
-                        app:layout_constraintVertical_bias="0.15" />
-
-                    <Button
-                        android:id="@+id/cnw_button5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:backgroundTint="@color/white"
-                        android:fontFamily="@font/ubuntu"
-                        android:text="Pick Time"
-                        android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="15dp"
-                        app:cornerRadius="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.906"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.125" />
-
-                    <TextView
-                        android:id="@+id/cnw_textview35"
+                        android:id="@+id/cnw_textview5"
                         android:layout_width="150dp"
                         android:layout_height="40dp"
-                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/ubuntu_italic"
                         android:gravity="right|center_horizontal|left|center_vertical"
@@ -386,9 +274,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.176"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cnw_textview34"
-                        app:layout_constraintVertical_bias="0.333" />
+                        app:layout_constraintStart_toStartOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
         </ScrollView>

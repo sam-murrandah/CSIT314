@@ -7,9 +7,7 @@
         android:title="Home"
         android:icon = "@drawable/vector_home_logo"
         android:id = "@+id/homelogo"/>
-    <item android:title="Map"
-        android:icon = "@drawable/vector_map_logo"
-        android:id = "@+id/maplogo"/>/>
+
     <item android:title="Search"
         android:icon = "@drawable/vector_search_logo"
         android:id = "@+id/searchlogo"/>/>
